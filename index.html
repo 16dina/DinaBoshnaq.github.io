@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dina Boshnaq Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Dina Boshnaq's<br>Portfolio</h1>
+						<p>An Applied Computer Science student filled with ambition and excitement for the experiences yet to come in her career :) Check out my <a target="_blank" href="https://www.linkedin.com/in/dina-boshnaq?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bs3uqBz7rS2aQWVd%2F9tUjxA%3D%3D">LinkedIn</a>.</p>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="projects.html">Projects and Accomplishments</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dina-boshnaq/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/16dina" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date" id="date"></span>
+									<script>
+										n =  new Date();
+										y = n.getFullYear();
+										m = n.toLocaleString('default', { month: 'long' });
+										d = n.getDate();
+										document.getElementById("date").innerHTML = d + " " + m + ", " + y;
+									</script>
+									<h2><a href="#">Weclome to my portfolio website!<br />
+									</a></h2>
+									<p>I am an Applied Computer Science student at Thomas More University of Applied Sciences in Belgium. My trajectory is mainly focused on
+										Artificial Intelligence and I'm currently in my 2nd year. Wanna know more about me? Checkout the about me page!
+									</p>
+								</header>
+
+								<button onclick="typeWriter()" style="margin-bottom: 5rem;">
+									View Dina's favorite quote
+								</button>
+
+								<div style="font-family: 'Special Elite', cursive;
+								color: #3f3f5a;
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								width:100%;">
+									<blockquote id="effect" style="white-space: pre-line; font-weight: 100;
+								font-size: 2rem;
+								max-width: 600px;
+								line-height: 1.4;
+								position: relative;
+								margin: 0;
+								padding: .5rem;
+								font-family: 'Special Elite';"></blockquote>
+								</div>
+
+								<script>
+									var i = 0;
+									var txt = 'Courage is not the absence of fear but rather the judgement that something else is more important.\n-Franklin D. Roosevelt';
+									var speed = 50;
+									
+									function typeWriter() {
+									  if (i < txt.length) {
+										document.getElementById("effect").innerHTML += txt.charAt(i);
+										i++;
+										setTimeout(typeWriter, speed);
+									  }
+									}
+								</script>
+
+								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li>
+								</ul> -->
+							</article>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">+32 465 83 01 08</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">dina.boshnaq2@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/dina-boshnaq/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/16dina" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Dina Boshnaq</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
