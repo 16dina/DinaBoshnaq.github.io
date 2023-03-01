@@ -89,6 +89,10 @@ body {
 	line-height: 1;
 }
 
+#nav {
+	position: fixed;
+}
+
 ol, ul {
 	list-style: none;
 }
